@@ -8,18 +8,18 @@ import { motion } from "framer-motion";
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-darkmaroon text-cream font-inter">
-      {/* Main Content */}
-      <div className="flex-grow relative overflow-hidden">
-        {/* Animated Blob */}
-        <div className="absolute -top-32 -left-40 w-[500px] h-[500px] bg-tan rounded-full opacity-20 blur-3xl animate-pulse z-0" />
-        
-        {/* Navbar */}
-        <Navbar />
+      {/* Background Blob Animation */}
+      <div className="absolute -top-32 -left-40 w-[500px] h-[500px] bg-tan rounded-full opacity-20 blur-3xl animate-pulse z-0"></div>
 
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Main content (flex-grow ensures it pushes footer down) */}
+      <div className="flex-grow relative z-10">
         {/* Hero Section */}
         <motion.section
           id="home"
-          className="pt-24 flex flex-col items-center justify-center h-[80vh] text-center z-10 relative"
+          className="pt-24 flex flex-col items-center justify-center h-[80vh] text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -43,7 +43,7 @@ function App() {
           </motion.p>
 
           {/* Social Icons */}
-          <div className="flex space-x-6 mt-6 text-2xl z-10">
+          <div className="flex space-x-6 mt-6 text-2xl">
             <a
               href="https://github.com/pdesai7245"
               target="_blank"
@@ -71,13 +71,12 @@ function App() {
           </div>
         </motion.section>
 
-        {/* Other Sections */}
         <About />
         <Projects />
         <Contact />
       </div>
 
-      {/* Footer Always at Bottom */}
+      {/* Sticky Footer */}
       <Footer />
     </div>
   );

@@ -20,7 +20,7 @@ function Contact() {
             href="mailto:pushkardesai123@gmail.com"
             className="text-tan underline hover:text-cream"
           >
-            Pushkardesa123@gmail.com
+            pushkardesai123@gmail.com
           </a>
         </p>
       </motion.div>

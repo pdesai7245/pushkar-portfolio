@@ -46,6 +46,12 @@ body {
     transform: translate(50px, -30px) scale(1.1);
   }
 }
+html,
+body,
+#root {
+  height: 100%;
+}
+
 
 .animated-blob {
   position: absolute;
