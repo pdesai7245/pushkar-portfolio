@@ -11,8 +11,14 @@ function About() {
         viewport={{ once: true }}
       >
         <h2 className="text-4xl font-bold mb-6">About Me</h2>
-        <p className="text-lg leading-relaxed text-[#cbd5e1]">
-          I’m <span className="font-semibold text-[#38bdf8]">Pushkar Desai</span>, a 3rd-year CSBS student at GITAM University with a passion for software development, blockchain, and sports leadership. I love building impactful digital experiences and organizing large-scale events like Sportika 2025.
+        <p className="text-lg leading-relaxed">
+          A <span className="font-semibold">final-year CSBS student</span> at GITAM University with a strong drive for 
+          <span className="font-semibold"> tech innovation</span> and <span className="font-semibold">entrepreneurship</span>. 
+          Experienced in <span className="font-semibold">full-stack development</span>, 
+          building <span className="font-semibold">event platforms</span>, and leading impactful 
+          <span className="font-semibold"> campus-wide initiatives</span>. 
+          A <span className="font-semibold">former Student Sports Associate</span> now focused on crafting 
+          <span className="font-semibold"> scalable digital products</span> with clean design and real-world value.
         </p>
       </motion.div>
     </section>
