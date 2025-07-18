@@ -45,7 +45,7 @@ function App() {
           {/* Social Icons */}
           <div className="flex space-x-6 mt-6 text-2xl z-10">
             <a
-              href="https://github.com/PushkarDesai"
+              href="https://github.com/pdesai7245"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-tan transition"
@@ -53,7 +53,7 @@ function App() {
               <i className="fab fa-github"></i>
             </a>
             <a
-              href="https://linkedin.com/in/pushkar-desai"
+              href="https://www.linkedin.com/in/pushkar-desai/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-tan transition"
@@ -61,7 +61,7 @@ function App() {
               <i className="fab fa-linkedin"></i>
             </a>
             <a
-              href="https://instagram.com/pushkardesai"
+              href="https://www.instagram.com/puss_mutt_kar?igsh=amUwa216bHN4ZzZr"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-tan transition"
