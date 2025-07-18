@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="bg-gray-900 text-white py-40 px-6 min-h-screen"
+      className="bg-[#0f172a] text-[#f8fafc] py-40 px-6 min-h-screen"
     >
       <motion.div
         className="max-w-4xl mx-auto text-center"
@@ -14,13 +14,13 @@ function Contact() {
         viewport={{ once: true }}
       >
         <h2 className="text-4xl font-bold mb-6">Contact Me</h2>
-        <p className="mb-6 text-lg">
+        <p className="mb-6 text-lg text-[#cbd5e1]">
           Have a project in mind or just want to say hi? Feel free to reach out!
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-6 text-sm">
           <a
             href="mailto:your.email@example.com"
-            className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg"
+            className="bg-[#38bdf8] hover:bg-[#0ea5e9] text-white px-6 py-3 rounded-lg transition"
           >
             Email Me
           </a>

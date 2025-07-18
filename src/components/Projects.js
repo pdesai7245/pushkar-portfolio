@@ -4,7 +4,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-black text-white py-40 px-6 min-h-screen"
+      className="bg-[#1e293b] text-[#f8fafc] py-40 px-6 min-h-screen"
     >
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
@@ -18,59 +18,45 @@ function Projects() {
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Project 1 */}
-          <motion.div
-            className="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition"
-            whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-semibold mb-2">
-              CNN-based Rice Quality Detection
-            </h3>
-            <p className="text-sm mb-4">
-              A deep learning model to classify rice grains based on quality using image processing and CNNs.
-            </p>
-            <a href="#" className="text-blue-400 hover:underline">View Code</a>
-          </motion.div>
-
-          {/* Project 2 */}
-          <motion.div
-            className="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition"
-            whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-semibold mb-2">
-              Drug Inventory System
-            </h3>
-            <p className="text-sm mb-4">
-              A smart and secure full-stack inventory manager for medical stores with role-based login, tracking, and billing.
-            </p>
-            <a href="#" className="text-blue-400 hover:underline">View Code</a>
-          </motion.div>
-
-          {/* Project 3 */}
-          <motion.div
-            className="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition"
-            whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-semibold mb-2">
-              Sportika 2025 Website
-            </h3>
-            <p className="text-sm mb-4">
-              Designed and developed the official website for GITAM’s flagship national sports fest with event registration and results tracking.
-            </p>
-            <a href="#" className="text-blue-400 hover:underline">View Site</a>
-          </motion.div>
+          {[
+            {
+              title: "CNN-based Rice Quality Detection",
+              desc: "A deep learning model to classify rice grains based on quality using image processing and CNNs.",
+              link: "#",
+              label: "View Code"
+            },
+            {
+              title: "Drug Inventory System",
+              desc: "A smart full-stack inventory manager for medical stores with secure login, tracking, and billing.",
+              link: "#",
+              label: "View Code"
+            },
+            {
+              title: "Sportika 2025 Website",
+              desc: "Official site for GITAM’s national sports fest with event registration and live results tracking.",
+              link: "#",
+              label: "View Site"
+            },
+          ].map((proj, i) => (
+            <motion.div
+              key={proj.title}
+              className="bg-[#0f172a] p-6 rounded-lg shadow hover:shadow-xl transition"
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 * i }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
+              <p className="text-sm mb-4 text-[#cbd5e1]">{proj.desc}</p>
+              <a
+                href={proj.link}
+                className="text-[#38bdf8] hover:text-[#0ea5e9] underline"
+              >
+                {proj.label}
+              </a>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
