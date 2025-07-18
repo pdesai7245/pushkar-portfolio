@@ -53,7 +53,7 @@ body {
   left: 10%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle at 30% 30%, #38bdf8, #1e3a8a);
+  background: radial-gradient(circle at 30% 30%, #CC8B65, #100C0D); 
   opacity: 0.25;
   filter: blur(80px);
   border-radius: 50%;

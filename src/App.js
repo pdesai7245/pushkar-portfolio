@@ -17,13 +17,13 @@ function App() {
       {/* Hero Section */}
       <motion.section
         id="home"
-        className="pt-24 flex flex-col items-center justify-center h-[80vh] text-center z-10 relative"
+        className="pt-24 flex flex-col items-center justify-center h-[80vh] text-center bg-darkmaroon text-cream z-10 relative"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         <motion.h1
-          className="text-5xl font-bold"
+          className="text-5xl font-bold text-tan"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
