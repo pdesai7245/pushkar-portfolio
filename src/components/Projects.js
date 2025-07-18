@@ -34,7 +34,6 @@ function Projects() {
               CNN.
             </p>
             <a href="#" className="text-cream hover:underline">
-              View Code
             </a>
           </motion.div>
 
@@ -55,7 +54,6 @@ function Projects() {
               tracking.
             </p>
             <a href="#" className="text-cream hover:underline">
-              View Code
             </a>
           </motion.div>
 
@@ -75,7 +73,6 @@ function Projects() {
               Official fest website with event registration and results tracking.
             </p>
             <a href="#" className="text-cream hover:underline">
-              View Site
             </a>
           </motion.div>
         </div>

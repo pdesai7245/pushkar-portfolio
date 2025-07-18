@@ -7,45 +7,76 @@ import { motion } from "framer-motion";
 
 function App() {
   return (
-    <div className="relative overflow-hidden bg-gradient-animate text-white min-h-screen font-inter">
-      {/* Floating Animated Blob */}
-      <div className="animated-blob"></div>
+    <div className="bg-darkmaroon text-cream font-inter min-h-screen">
+      {/* Background Blob Animation Container */}
+      <div className="relative overflow-hidden">
+        {/* Animated Background Blob */}
+        <div className="absolute -top-32 -left-40 w-[500px] h-[500px] bg-tan rounded-full opacity-20 blur-3xl animate-pulse z-0"></div>
 
-      {/* Navbar */}
-      <Navbar />
+        {/* Navbar */}
+        <Navbar />
 
-      {/* Hero Section */}
-      <motion.section
-        id="home"
-        className="pt-24 flex flex-col items-center justify-center h-[80vh] text-center bg-darkmaroon text-cream z-10 relative"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <motion.h1
-          className="text-5xl font-bold text-tan"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.3 }}
+        {/* Hero Section */}
+        <motion.section
+          id="home"
+          className="pt-24 flex flex-col items-center justify-center h-[80vh] text-center z-10 relative"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
         >
-          Hi, I'm Pushkar Desai
-        </motion.h1>
+          <motion.h1
+            className="text-5xl font-bold text-tan"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
+            Hi, I'm Pushkar Desai
+          </motion.h1>
 
-        <motion.p
-          className="mt-4 text-xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.6 }}
-        >
-          Student | Developer | Sports Leader
-        </motion.p>
-      </motion.section>
+          <motion.p
+            className="mt-4 text-xl"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
+          >
+            Student | Developer | Sports Leader
+          </motion.p>
 
-      {/* Other Sections */}
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+          {/* Social Icons */}
+          <div className="flex space-x-6 mt-6 text-2xl z-10">
+            <a
+              href="https://github.com/PushkarDesai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-tan transition"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/pushkar-desai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-tan transition"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://instagram.com/pushkardesai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-tan transition"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
+        </motion.section>
+
+        {/* Other Sections */}
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

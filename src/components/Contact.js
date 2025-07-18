@@ -14,16 +14,15 @@ function Contact() {
         viewport={{ once: true }}
       >
         <h2 className="text-4xl font-bold mb-6 text-tan">Contact Me</h2>
-        <p className="text-lg mb-6">
-          Interested in collaborating or just want to say hi? Feel free to drop
-          a message!
+        <p className="text-lg mb-4">
+          You can reach me at:{" "}
+          <a
+            href="mailto:pushkardesai123@gmail.com"
+            className="text-tan underline hover:text-cream"
+          >
+            Pushkardesa123@gmail.com
+          </a>
         </p>
-        <a
-          href="mailto:pushkar@example.com"
-          className="inline-block mt-4 px-6 py-3 bg-tan text-darkmaroon font-semibold rounded-lg hover:bg-cream hover:text-darkmaroon transition"
-        >
-          Say Hello
-        </a>
       </motion.div>
     </section>
   );
