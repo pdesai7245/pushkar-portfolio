@@ -3,24 +3,43 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
+import { motion } from "framer-motion";
 
 function App() {
   return (
-    <div className="bg-black text-white min-h-screen">
-      {/* Navbar at the top */}
+    <div className="bg-black text-white min-h-screen font-inter">
+      {/* Navbar */}
       <Navbar />
 
       {/* Hero Section */}
-      <section id="home" className="pt-24 flex flex-col items-center justify-center">
-      <h1 className="text-5xl font-bold">Hi, I'm Pushkar Desai</h1>
-      <p className="mt-4 text-xl">Student | Developer | Sports Leader</p>
-    </section>
+      <motion.section
+        id="home"
+        className="pt-24 flex flex-col items-center justify-center h-[80vh] text-center"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <motion.h1
+          className="text-5xl font-bold"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
+          Hi, I'm Pushkar Desai
+        </motion.h1>
 
+        <motion.p
+          className="mt-4 text-xl"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
+          Student | Developer | Sports Leader
+        </motion.p>
+      </motion.section>
 
-      {/* About Section */}
+      {/* Other Sections (Already Animated in their own files) */}
       <About />
-
-      {/* Projects Section */}
       <Projects />
       <Contact />
     </div>

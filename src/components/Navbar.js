@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function Navbar() {
   return (
     <nav className="bg-gray-900 text-white px-6 py-4 flex justify-between items-center fixed top-0 left-0 right-0 z-10 shadow">
