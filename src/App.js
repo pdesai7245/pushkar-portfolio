@@ -2,12 +2,11 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-
 import { motion } from "framer-motion";
 
 function App() {
   return (
-    <div className="bg-black text-white min-h-screen font-inter">
+    <div className="bg-gradient-animate text-white min-h-screen font-inter">
       {/* Navbar */}
       <Navbar />
 
@@ -38,7 +37,7 @@ function App() {
         </motion.p>
       </motion.section>
 
-      {/* Other Sections (Already Animated in their own files) */}
+      {/* Other Sections */}
       <About />
       <Projects />
       <Contact />
