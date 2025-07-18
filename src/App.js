@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 
 function App() {
   return (
-    <div className="bg-darkmaroon text-cream font-inter min-h-screen">
-      {/* Background Blob Animation Container */}
-      <div className="relative overflow-hidden">
-        {/* Animated Background Blob */}
-        <div className="absolute -top-32 -left-40 w-[500px] h-[500px] bg-tan rounded-full opacity-20 blur-3xl animate-pulse z-0"></div>
-
+    <div className="flex flex-col min-h-screen bg-darkmaroon text-cream font-inter">
+      {/* Main Content */}
+      <div className="flex-grow relative overflow-hidden">
+        {/* Animated Blob */}
+        <div className="absolute -top-32 -left-40 w-[500px] h-[500px] bg-tan rounded-full opacity-20 blur-3xl animate-pulse z-0" />
+        
         {/* Navbar */}
         <Navbar />
 
@@ -75,8 +75,10 @@ function App() {
         <About />
         <Projects />
         <Contact />
-        <Footer />
       </div>
+
+      {/* Footer Always at Bottom */}
+      <Footer />
     </div>
   );
 }
