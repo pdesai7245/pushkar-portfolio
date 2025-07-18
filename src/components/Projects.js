@@ -30,11 +30,9 @@ function Projects() {
               CNN-based Rice Quality Detection
             </h3>
             <p className="text-sm mb-4">
-              Classifies rice grains based on quality using deep learning and
-              CNN.
+              Deep learning system that classifies rice grain quality using CNN architecture.
             </p>
-            <a href="#" className="text-cream hover:underline">
-            </a>
+            {/* Add project link if needed */}
           </motion.div>
 
           {/* Project 2 */}
@@ -50,11 +48,8 @@ function Projects() {
               Drug Inventory System
             </h3>
             <p className="text-sm mb-4">
-              Secure full-stack inventory system with role-based login and
-              tracking.
+              Full-stack secure inventory platform with role-based access and live tracking.
             </p>
-            <a href="#" className="text-cream hover:underline">
-            </a>
           </motion.div>
 
           {/* Project 3 */}
@@ -70,10 +65,8 @@ function Projects() {
               Sportika 2025 Website
             </h3>
             <p className="text-sm mb-4">
-              Official fest website with event registration and results tracking.
+              Official fest site featuring event registration, results, and live updates.
             </p>
-            <a href="#" className="text-cream hover:underline">
-            </a>
           </motion.div>
         </div>
       </div>
