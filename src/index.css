@@ -23,3 +23,40 @@ body {
   background-size: 600% 600%;
   animation: gradient 15s ease infinite;
 }
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.bg-gradient-animate {
+  background: linear-gradient(270deg, #0f172a, #1e3a8a, #2563eb, #38bdf8);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes blobMove {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(50px, -30px) scale(1.1);
+  }
+}
+
+.animated-blob {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at 30% 30%, #38bdf8, #1e3a8a);
+  opacity: 0.25;
+  filter: blur(80px);
+  border-radius: 50%;
+  animation: blobMove 20s ease-in-out infinite;
+  z-index: 0;
+}
