@@ -18,6 +18,7 @@ function Navbar() {
         <ul className="hidden md:flex ml-auto space-x-6 text-cream font-medium">
           <li><a href="#home" className="hover:text-tan">Home</a></li>
           <li><a href="#about" className="hover:text-tan">About</a></li>
+          <li><a href="#skills" className="hover:text-tan">Skills</a></li>
           <li><a href="#projects" className="hover:text-tan">Projects</a></li>
           <li><a href="#resume" className="hover:text-tan">Resume</a></li>
           <li><a href="#contact" className="hover:text-tan">Contact</a></li>
@@ -29,6 +30,7 @@ function Navbar() {
         <ul className="md:hidden bg-darkgreen/90 text-cream px-4 pb-4 space-y-2">
           <li><a href="#home" className="block">Home</a></li>
           <li><a href="#about" className="block">About</a></li>
+          <li><a href="#skills" className="block">Skills</a></li>
           <li><a href="#projects" className="block">Projects</a></li>
           <li><a href="#resume" className="block">Resume</a></li>
           <li><a href="#contact" className="block">Contact</a></li>
