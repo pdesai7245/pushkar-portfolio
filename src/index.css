@@ -1,14 +1,18 @@
-html {
+/* Global styles */
+html, body, #root {
+  height: 100%;
   scroll-behavior: smooth;
-}
-body {
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
   font-family: 'Inter', sans-serif;
 }
 
+/* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Gradient Animation */
 @keyframes gradient {
   0%, 100% {
     background-position: 0% 50%;
@@ -23,21 +27,8 @@ body {
   background-size: 600% 600%;
   animation: gradient 15s ease infinite;
 }
-@keyframes gradient {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
 
-.bg-gradient-animate {
-  background: linear-gradient(270deg, #0f172a, #1e3a8a, #2563eb, #38bdf8);
-  background-size: 600% 600%;
-  animation: gradient 15s ease infinite;
-}
-
+/* Blob Animation */
 @keyframes blobMove {
   0%, 100% {
     transform: translate(0px, 0px) scale(1);
@@ -46,12 +37,6 @@ body {
     transform: translate(50px, -30px) scale(1.1);
   }
 }
-html,
-body,
-#root {
-  height: 100%;
-}
-
 
 .animated-blob {
   position: absolute;
