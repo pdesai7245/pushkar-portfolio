@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ResumeViewer from "./components/ResumeViewer";
@@ -72,6 +73,7 @@ function App() {
 
       {/* Content Sections */}
       <About />
+      <Skills />
       <Projects />
       <ResumeViewer />  {/* Only shown when scrolled to */}
       <Contact />
