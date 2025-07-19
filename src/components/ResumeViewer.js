@@ -11,10 +11,10 @@ function ResumeViewer() {
   return (
     <section
       id="resume"
-      className="bg-darkmaroon text-cream py-20 px-6 scroll-mt-24 text-center"
+      className="min-h-screen flex flex-col items-center justify-center bg-darkgreen text-cream px-6 scroll-mt-24"
     >
       <motion.h2
-        className="text-4xl font-bold mb-6 text-tan"
+        className="text-4xl font-bold mb-8 text-tan"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -25,14 +25,14 @@ function ResumeViewer() {
 
       <button
         onClick={toggleResume}
-        className="bg-tan text-darkmaroon font-semibold px-6 py-2 rounded-full shadow hover:bg-cream transition mb-6"
+        className="bg-tan text-darkmaroon text-lg font-semibold px-8 py-3 rounded-full shadow hover:bg-cream transition mb-10"
       >
         {showResume ? "Hide Resume" : "View Resume"}
       </button>
 
       {showResume && (
         <motion.div
-          className="mt-6 flex justify-center"
+          className="flex justify-center w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -42,7 +42,7 @@ function ResumeViewer() {
             title="Pushkar Resume"
             width="100%"
             height="600px"
-            className="max-w-4xl w-full border rounded-lg"
+            className="max-w-4xl w-full border border-tan rounded-lg"
           />
         </motion.div>
       )}

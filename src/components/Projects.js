@@ -4,8 +4,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-darkmaroon text-cream py-20 px-6 scroll-mt-24"
-    >
+      className="min-h-screen flex items-center justify-center bg-darkgreen text-cream px-6 scroll-mt-24">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           className="text-4xl font-bold mb-10 text-tan"

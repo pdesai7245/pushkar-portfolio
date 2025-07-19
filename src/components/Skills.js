@@ -28,8 +28,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="bg-forest text-cream py-20 px-6 scroll-mt-24"
-    >
+      className="min-h-screen flex items-center justify-center bg-darkgreen text-cream px-6 scroll-mt-24">
       <motion.div
         className="max-w-5xl mx-auto text-center"
         initial={{ opacity: 0, y: 40 }}

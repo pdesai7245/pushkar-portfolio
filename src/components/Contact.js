@@ -4,8 +4,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="bg-forest text-cream py-16 px-6 sm:px-10 scroll-mt-24"
-    >
+      className="min-h-screen flex items-center justify-center bg-darkgreen text-cream px-6 scroll-mt-24">
       <motion.div
         className="max-w-3xl mx-auto text-center"
         initial={{ opacity: 0, y: 50 }}

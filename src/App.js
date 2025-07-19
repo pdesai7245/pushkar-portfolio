@@ -19,7 +19,7 @@ function App() {
       {/* Hero Section */}
       <motion.section
         id="home"
-        className="pt-24 flex flex-col items-center justify-center h-[80vh] text-center z-10 relative"
+        className="h-screen flex flex-col items-center justify-center text-center z-10 relative"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -75,7 +75,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <ResumeViewer />  {/* Only shown when scrolled to */}
+      <ResumeViewer />
       <Contact />
 
       {/* Footer */}
