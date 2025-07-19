@@ -22,7 +22,7 @@ function Skills() {
     { name: "App Dev", icon: <SiAndroid size={24} /> },
     { name: "Frontend Dev", icon: <SiHtml5 size={24} /> },
     { name: "CSS", icon: <SiCss3 size={24} /> },
-    { name: "Git", icon: <SiGithub size={24} /> },
+    { name: "Github", icon: <SiGithub size={24} /> },
   ];
 
   return (

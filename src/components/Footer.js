@@ -9,7 +9,7 @@ function Footer() {
       transition={{ duration: 0.6 }}
     >
       <p className="text-sm font-medium">
-        Crafted with <span className="text-pink-400">passion</span> ✨ by{" "}
+        Crafted with <span className="text-pink-400">pasión</span> ✨ by{" "}
         <span className="text-tan font-bold">&lt;Pushkar&gt;</span>
       </p>
     </motion.footer>

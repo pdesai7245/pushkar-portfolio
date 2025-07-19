@@ -4,7 +4,8 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center bg-darkgreen text-cream px-6 scroll-mt-24">
+      className="h-screen flex items-center justify-center bg-darkgreen text-cream px-6 scroll-mt-24"
+    >
       <motion.div
         className="max-w-3xl mx-auto text-center"
         initial={{ opacity: 0, y: 50 }}
@@ -13,7 +14,7 @@ function Contact() {
         viewport={{ once: true }}
       >
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-tan">Contact Me</h2>
-        <p class  Name="text-base sm:text-lg leading-relaxed">
+        <p className="text-base sm:text-lg leading-relaxed">
           You can reach me at{" "}
           <a
             href="mailto:pushkardesai123@gmail.com"
