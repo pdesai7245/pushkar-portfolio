@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import ResumeViewer from "./components/ResumeViewer";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
 
@@ -72,6 +73,7 @@ function App() {
       {/* Content Sections */}
       <About />
       <Projects />
+      <ResumeViewer />  {/* Only shown when scrolled to */}
       <Contact />
 
       {/* Footer */}

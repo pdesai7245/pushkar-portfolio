@@ -14,7 +14,7 @@ function Contact() {
         viewport={{ once: true }}
       >
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-tan">Contact Me</h2>
-        <p className="text-base sm:text-lg leading-relaxed">
+        <p class  Name="text-base sm:text-lg leading-relaxed">
           You can reach me at{" "}
           <a
             href="mailto:pushkardesai123@gmail.com"
