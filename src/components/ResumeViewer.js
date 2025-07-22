@@ -23,26 +23,34 @@ function ResumeViewer() {
         My Resume
       </motion.h2>
 
-      <button
-        onClick={toggleResume}
-        className="bg-tan text-darkmaroon text-lg font-semibold px-8 py-3 rounded-full shadow hover:bg-cream transition mb-10"
-      >
-        {showResume ? "Hide Resume" : "View Resume"}
-      </button>
+      <div className="flex flex-col sm:flex-row gap-4 mb-10">
+        <button
+          onClick={toggleResume}
+          className="bg-tan text-darkmaroon text-lg font-semibold px-8 py-3 rounded-full shadow hover:bg-cream transition"
+        >
+          {showResume ? "Hide Resume" : "View Resume"}
+        </button>
+
+        <a
+          href="/Desai_Resume.pdf"
+          download="Pushkar_Desai_Resume.pdf"
+          className="bg-darkmaroon text-tan text-lg font-semibold px-8 py-3 rounded-full shadow hover:bg-cream hover:text-darkmaroon transition text-center"
+        >
+          Download Resume
+        </a>
+      </div>
 
       {showResume && (
         <motion.div
-          className="flex justify-center w-full"
+          className="flex justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           <iframe
-            src="/Desai_CV.pdf"
+            src="/Desai_Resume.pdf"
             title="Pushkar Resume"
-            width="100%"
-            height="600px"
-            className="max-w-4xl w-full border border-tan rounded-lg"
+            className="w-[800px] h-[1130px] border border-tan rounded-lg shadow-lg"
           />
         </motion.div>
       )}
