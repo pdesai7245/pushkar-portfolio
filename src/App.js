@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import ResumeViewer from "./components/ResumeViewer";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   return (
@@ -93,6 +94,7 @@ function App() {
 
       <section className="snap-start h-fit">
         <Footer />
+        <CustomCursor />
       </section>
     </div>
   );
