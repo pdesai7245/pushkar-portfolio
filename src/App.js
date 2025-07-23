@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ResumeViewer from "./components/ResumeViewer";
@@ -14,7 +15,7 @@ function App() {
       {/* Background Animation */}
       <div className="absolute -top-32 -left-40 w-[500px] h-[500px] bg-tan rounded-full opacity-20 blur-3xl animate-pulse z-0" />
 
-      {/* Navbar (fixed on top, not part of snap scroll) */}
+      {/* Navbar */}
       <Navbar />
 
       {/* Hero Section */}
@@ -71,13 +72,18 @@ function App() {
         </div>
       </motion.section>
 
-      {/* Scroll-snapping content sections */}
+      {/* Scroll-snapping Sections */}
       <section id="about" className="snap-start h-screen flex items-center justify-center">
         <About />
       </section>
 
       <section id="skills" className="snap-start h-screen flex items-center justify-center">
         <Skills />
+      </section>
+
+      {/* ✅ FIXED: Wrap Experience inside a section with snap */}
+      <section id="experience" className="snap-start h-screen flex items-center justify-center">
+        <Experience />
       </section>
 
       <section id="projects" className="snap-start h-screen flex items-center justify-center">
