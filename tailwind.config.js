@@ -12,6 +12,8 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
       },
+      // 👇 Add this for smoother scrolling utility
+      scrollBehavior: ['smooth'],
     },
   },
   plugins: [],
