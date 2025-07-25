@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import ResumeViewer from "./components/ResumeViewer";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 function App() {
   return (
@@ -25,14 +26,25 @@ function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <motion.h1
-          className="text-5xl font-bold text-tan"
+        <motion.div
+          className="text-5xl font-bold text-tan min-h-[64px]" // height ensures no layout shift
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          Hi, I'm Pushkar Desai
-        </motion.h1>
+          <Typewriter
+            options={{
+              strings: [
+                "Hi, I'm Pushkar Desai",
+              ],
+              autoStart: true,
+              loop: true,
+              delay: 75,
+              deleteSpeed: 30,
+              pauseFor: 10000,
+            }}
+          />
+        </motion.div>
 
         <motion.p
           className="mt-4 text-xl"
@@ -80,7 +92,6 @@ function App() {
         <Skills />
       </section>
 
-      {/* ✅ FIXED: Wrap Experience inside a section with snap */}
       <section id="experience" className="snap-start h-screen flex items-center justify-center">
         <Experience />
       </section>
