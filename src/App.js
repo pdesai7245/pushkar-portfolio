@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import CursorHint from "./components/CursorHint";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
@@ -110,6 +111,7 @@ function App() {
 
       <section className="snap-start h-fit">
         <Footer />
+        <CursorHint />
       </section>
     </div>
   );
