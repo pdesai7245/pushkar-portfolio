@@ -14,7 +14,8 @@ const projects = [
   {
     title: "Sportika 2025 Website",
     description:
-      "Official fest site featuring event registration, results, and live updates.",
+      "I mentored the Sportika website project and was part of the team that built the official event portal.",
+    link: "https://namma-sportika.gitam.edu/",
   },
 ];
 
@@ -45,9 +46,19 @@ function Projects() {
               <h3 className="text-xl font-semibold mb-3 text-cream">
                 {project.title}
               </h3>
-              <p className="text-sm text-cream">
+              <p className="text-sm text-cream mb-2">
                 {project.description}
               </p>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-tan text-sm font-medium hover:underline"
+                >
+                  Visit Website
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
