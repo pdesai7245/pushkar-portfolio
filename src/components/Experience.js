@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaInstagram } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 
 const experiences = [
   {
@@ -10,7 +11,8 @@ const experiences = [
     org: "Directorate of Sports & NCC GITAM",
     date: "Mar 2025 – Mar 2025 · 1 mo",
     desc: "Led the organization of Sportika 2025 with 700+ athletes. Managed Security, Press, External Relations, and Logistics.",
-    link: "https://www.instagram.com/p/DHeMM5hziGr/"
+    instagram: "https://www.instagram.com/p/DHeMM5hziGr/",
+    website: "https://namma-sportika.gitam.edu/team",
   },
   {
     id: 2,
@@ -19,7 +21,7 @@ const experiences = [
     org: "Directorate of Sports & NCC GITAM",
     date: "Jun 2024 – Mar 2025 · 10 mos",
     desc: "Oversaw 11 SIGs and GSC under OBE domain. Handled sponsorships, partnerships, and MOU collaborations.",
-    link: "https://www.instagram.com/p/C9R1LhBpv7f/"
+    instagram: "https://www.instagram.com/p/C9R1LhBpv7f/"
   },
   {
     id: 3,
@@ -28,12 +30,13 @@ const experiences = [
     org: "Directorate of Sports & NCC GITAM",
     date: "Jun 2023 – May 2024 · 1 yr",
     desc: "Executed 50+ recreational events under OFD domain. Documented events per Directorate of Sports guidelines.",
-    link: "https://www.instagram.com/p/CvlvDdYNRG5/"
+    instagram: "https://www.instagram.com/p/CvlvDdYNRG5/"
   }
 ];
 
 function Experience() {
   const [active, setActive] = useState(1);
+  const current = experiences[active - 1];
 
   return (
     <section id="experience" className="min-h-screen flex flex-col items-center justify-center bg-darkgreen text-cream px-4 py-20 scroll-mt-24">
@@ -67,20 +70,34 @@ function Experience() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h3 className="text-2xl font-bold text-tan mb-2">{experiences[active - 1].title}</h3>
-        <p className="italic text-cream/80 text-sm mb-1">{experiences[active - 1].type}</p>
-        <p className="text-sm text-cream/80 mb-1">{experiences[active - 1].org}</p>
-        <p className="text-sm text-cream/80 mb-4">{experiences[active - 1].date}</p>
-        <p className="mb-4 leading-relaxed">{experiences[active - 1].desc}</p>
+        <h3 className="text-2xl font-bold text-tan mb-2">{current.title}</h3>
+        <p className="italic text-cream/80 text-sm mb-1">{current.type}</p>
+        <p className="text-sm text-cream/80 mb-1">{current.org}</p>
+        <p className="text-sm text-cream/80 mb-4">{current.date}</p>
+        <p className="mb-4 leading-relaxed">{current.desc}</p>
 
-        <a
-          href={experiences[active - 1].link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-tan hover:text-cream transition text-sm font-medium"
-        >
-          <FaInstagram className="text-lg" /> View on Instagram
-        </a>
+        <div className="flex gap-4 items-center">
+          {current.instagram && (
+            <a
+              href={current.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-tan hover:text-cream transition text-sm font-medium"
+            >
+              <FaInstagram className="text-lg" /> View on Instagram
+            </a>
+          )}
+          {current.website && (
+            <a
+              href={current.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-tan hover:text-cream transition text-sm font-medium"
+            >
+              <FaGlobe className="text-lg" /> View On Website
+            </a>
+          )}
+        </div>
       </motion.div>
     </section>
   );
