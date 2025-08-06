@@ -9,7 +9,7 @@ import ResumeViewer from "./components/ResumeViewer";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { inject } from "@vercel/analytics"; // ✅ Vercel Analytics
+import { inject } from "@vercel/analytics"; 
 
 inject(); // ✅ Initialize analytics
 
@@ -38,7 +38,7 @@ function App() {
         >
           <Typewriter
             options={{
-              strings: ["Hi, I'm Pushkar Desai"],
+              strings: ["Rahul Budmos"],
               autoStart: true,
               loop: true,
               delay: 75,
