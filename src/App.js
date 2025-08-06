@@ -9,6 +9,9 @@ import ResumeViewer from "./components/ResumeViewer";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
+import { inject } from "@vercel/analytics"; // ✅ Vercel Analytics
+
+inject(); // ✅ Initialize analytics
 
 function App() {
   return (
@@ -28,16 +31,14 @@ function App() {
         transition={{ duration: 1 }}
       >
         <motion.div
-          className="text-5xl font-bold text-tan min-h-[64px]" // height ensures no layout shift
+          className="text-5xl font-bold text-tan min-h-[64px]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
           <Typewriter
             options={{
-              strings: [
-                "Hi, I'm Pushkar Desai",
-              ],
+              strings: ["Hi, I'm Pushkar Desai"],
               autoStart: true,
               loop: true,
               delay: 75,
