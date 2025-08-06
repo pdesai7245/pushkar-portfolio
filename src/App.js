@@ -38,7 +38,7 @@ function App() {
         >
           <Typewriter
             options={{
-              strings: ["Rahul Budmos"],
+              strings: ["Hi, I'm Pushkar Desai"],
               autoStart: true,
               loop: true,
               delay: 75,
